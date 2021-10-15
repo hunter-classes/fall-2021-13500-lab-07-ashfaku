@@ -30,12 +30,8 @@ int main()
 	{
 		original += s + "\n";
 		int open = countChar(s, '{'), close = countChar(s, '}');
-		if (close == 0)
-			for (int i = 0; i < tab; i++)
-				line += "\t";
-		else
-			for (int i = 0; i < tab - 1; i++)
-				line += "\t";
+		for (int i = 0; i < (close == 0 ? tab : tab - 1); i++)
+			line += "\t";
 		line += removeLeadingSpaces(s);
 		tab += open;
 		tab -= close;
