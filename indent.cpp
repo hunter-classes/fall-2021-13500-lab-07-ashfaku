@@ -47,6 +47,7 @@ int main()
 	file1.open("fixed.cpp");
 	file1 << line;
 	file.close();
+	file1.close();
 	return 0;
 }
 
