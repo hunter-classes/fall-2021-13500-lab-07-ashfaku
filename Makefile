@@ -5,4 +5,4 @@ indent.o: indent.cpp
 	g++ -c indent.cpp
 
 clean:
-	rm -f *.o
+	rm -f *.o main
